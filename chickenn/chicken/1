@@ -1,0 +1,16 @@
+chicken-shop/
+│── frontend/
+│   ├── index.html
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── app.js
+│   └── images/
+│       └── chicken-leg.jpg
+│
+│── backend/
+│   ├── server.js
+│   ├── package.json
+│   ├── .env (Stripe, SendGrid, Twilio keys)
+│
+│── README.md

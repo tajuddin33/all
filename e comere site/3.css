@@ -1,0 +1,102 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { scroll-behavior: smooth; background: #f8f8f8; }
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+
+.navbar .logo { font-size: 24px; font-weight: bold; }
+.navbar .menu { display: flex; gap: 20px; }
+.navbar .menu a { color: white; text-decoration: none; font-size: 18px; }
+.navbar .menu a:hover {
+    color: rgb(15, 224, 11);
+}
+.menu-toggle { display: none; font-size: 24px; cursor: pointer; }
+
+
+@media (max-width: 768px) {
+    .menu { display: none; flex-direction: column; background: #444; position: absolute; top: 60px; right: 20px; width: 200px; padding: 10px; border-radius: 5px; }
+    .menu a { padding: 10px; display: block; }
+    .menu-toggle { display: block; }
+    .menu.show-menu { display: flex; }
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero {
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* Products */
+.product-container, .pricing-container, .blog-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product, .plan, .post {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    background: #fd8f11;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover { background: #17ff1e;}
+
+/* FAQ */
+.faq-item {
+    text-align: left;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 15px;
+}

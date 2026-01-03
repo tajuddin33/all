@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">My Website</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#blog">Blog</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>Build amazing things with us!</p>
+        <button>Get Started</button>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="container">
+            <div class="box"><img src="https://source.unsplash.com/300x200/?website" alt="Portfolio"><h3>Website Project</h3></div>
+            <div class="box"><img src="https://source.unsplash.com/300x200/?app" alt="Portfolio"><h3>App Development</h3></div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-table">
+            <div class="pricing"><h3>Basic</h3><p>$99 / month</p></div>
+            <div class="pricing"><h3>Standard</h3><p>$199 / month</p></div>
+            <div class="pricing"><h3>Premium</h3><p>$299 / month</p></div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Latest Blogs</h2>
+        <div class="container">
+            <div class="box"><h3>Web Design Trends</h3><p>Read about the latest trends.</p></div>
+            <div class="box"><h3>SEO Tips</h3><p>Improve your rankings.</p></div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item"><strong>What services do you offer?</strong><p>We provide web development, app development, and SEO services.</p></div>
+        <div class="faq-item"><strong>How can I contact you?</strong><p>Use the contact form below.</p></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button>Send Message</button>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu').classList.toggle('show-menu');
+        }
+    </script>
+
+</body>
+</html>

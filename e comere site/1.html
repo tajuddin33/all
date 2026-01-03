@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website with Products</title>
+    <link rel="stylesheet" href="1.css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">My Website</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>Build amazing things with us!</p>
+        <button>Get Started</button>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="https://i.redd.it/msl53vqmf4xb1.jpg" alt="Product 1">
+                <h3>Gaming Laptop</h3>
+                <p>$999</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/ECOM/Default/2024/7/439128150/JO/EO/LD/141264671/h9b6fd5c1e98a4bd2b1dfe25a11d89b67p-500x500.webp" alt="Product 2">
+                <h3>Smart Phone</h3>
+                <p>$699</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="img/bg2.webp" alt="Product 3">
+                <h3>Wireless Headphones</h3>
+                <p>$199</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://www.bewakoof.com/blog/wp-content/uploads/2022/05/image-17.png" alt="Product 4">
+                <h3>Smart Watch</h3>
+                <p>$299</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+<img src="https://source.unsplash.com/300x200/?website,design" alt="Portfolio Image">
+
+</body>
+</html>
